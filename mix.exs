@@ -30,14 +30,14 @@ defmodule ArrowElixir.MixProject do
   # Run "mix help compile.app" to learn about applications.
   def application do
     [
-      extra_applications: [:logger, :eex]
+      extra_applications: [:logger, :eex, :toml]
     ]
   end
 
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:rustler, "~> 0.22-rc"},
+      {:rustler, "~> 0.22-0"},
       {:toml, "~> 0.5"},
       {:ex_doc, "~> 0.24", only: :dev, runtime: false},
       {:ex_parameterized, "~> 1.3.7", only: :test},
